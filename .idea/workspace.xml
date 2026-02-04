@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b87d994f-3391-4ce5-bc54-951f2f9495f9" name="Changes" comment="LucaOne now supports flash attention and bp16  for training" />
+    <list default="true" id="b87d994f-3391-4ce5-bc54-951f2f9495f9" name="Changes" comment="LucaOne now supports flash attention and bp16  for training">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -443,6 +445,10 @@
       <workItem from="1767280518101" duration="681000" />
       <workItem from="1767774904856" duration="1309000" />
       <workItem from="1767839108411" duration="724000" />
+      <workItem from="1769946869011" duration="31000" />
+      <workItem from="1770174752894" duration="523000" />
+      <workItem from="1770175595082" duration="56000" />
+      <workItem from="1770177035959" duration="54000" />
     </task>
     <task id="LOCAL-00043" summary="feature: update readme">
       <created>1744115617618</created>
