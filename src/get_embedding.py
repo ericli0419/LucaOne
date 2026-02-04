@@ -1017,7 +1017,7 @@ def main(model_args):
                                 device=torch.device("cpu"),
                                 matrix_add_special_token=matrix_add_special_token,
                                 save_type=model_args.save_type,
-                                use_bf16=False
+                                use_bf16=model_args.use_bf16
                             )
                             use_cpu = True
                         if emb is not None and input_seq_len > model_args.embedding_fixed_len_a_time:
@@ -1032,7 +1032,7 @@ def main(model_args):
                                 matrix_add_special_token=matrix_add_special_token,
                                 save_type=model_args.save_type,
                                 use_cpu=use_cpu,
-                                use_bf16=not use_cpu and model_args.use_bf16
+                                use_bf16=model_args.use_bf16
                             )
                         if use_cpu:
                             print("use_cpu: %r" % use_cpu)
@@ -1061,7 +1061,7 @@ def main(model_args):
                                 device=torch.device("cpu"),
                                 matrix_add_special_token=matrix_add_special_token,
                                 save_type=model_args.save_type,
-                                use_bf16=False
+                                use_bf16=model_args.use_bf16
                             )
                             use_cpu = True
                         # embedding全
@@ -1077,7 +1077,7 @@ def main(model_args):
                                 matrix_add_special_token=matrix_add_special_token,
                                 save_type=model_args.save_type,
                                 use_cpu=use_cpu,
-                                use_bf16=not use_cpu and model_args.use_bf16
+                                use_bf16=model_args.use_bf16
                             )
                         if use_cpu:
                             print("use_cpu: %r" % use_cpu)
@@ -1138,7 +1138,7 @@ def main(model_args):
                     device=torch.device("cpu"),
                     matrix_add_special_token=matrix_add_special_token,
                     save_type=model_args.save_type,
-                    use_bf16=False
+                    use_bf16=model_args.use_bf16
                 )
                 use_cpu = True
             # embedding全
@@ -1154,7 +1154,7 @@ def main(model_args):
                     matrix_add_special_token=matrix_add_special_token,
                     save_type=model_args.save_type,
                     use_cpu=use_cpu,
-                    use_bf16=not use_cpu and model_args.use_bf16
+                    use_bf16=model_args.use_bf16
                 )
             if use_cpu:
                 print("use_cpu: %r" % use_cpu)
